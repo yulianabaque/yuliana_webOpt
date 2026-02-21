@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squid Game</title>
-    <link rel="preload" as="image" href="image/foto1.webp" type="image/webp">
+    <link rel="preload" as="image" href="image/foto1.webp">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="image/logo-squidgame.png" type="image/png">
+    <link rel="icon" href="image/logo-squidgame.webp" type="image/webp">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <div class="container mt-2 d-flex align-items-center">
 
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="image/logo-squidgame.png"
+                <img src="image/logo-squidgame.webp"
                      alt="Logo Squid Game"
                      width="120"
                      height="60"
@@ -52,15 +53,15 @@
 
 
 <div class="container my-5">
+
+    <!-- HERO -->
     <div class="position-relative text-center rounded-3 overflow-hidden">
-        <picture>
-            <source srcset="image/foto1.webp" type="image/webp">
-            <img src="image/foto1.jpg"
-                 class="img-fluid w-100"
-                 alt="Juego Luz Roja, Luz Verde"
-                 width="1200"
-                 height="600">
-        </picture>
+        <img src="image/foto1.webp"
+             class="img-fluid w-100"
+             alt="Juego Luz Roja, Luz Verde"
+             width="1200"
+             height="600"
+             fetchpriority="high">
     </div>
 
 
@@ -69,16 +70,13 @@
         <!-- CARD 1 -->
         <div class="col-md-6">
             <div class="position-relative border rounded-4 overflow-hidden">
-                <picture>
-                    <source srcset="image/foto2.webp" type="image/webp">
-                    <img src="image/foto2.jpg"
-                         class="img-fluid w-100"
-                         alt="Venta de pósters"
-                         width="800"
-                         height="500"
-                         loading="lazy"
-                         decoding="async">
-                </picture>
+                <img src="image/foto2.webp"
+                     class="img-fluid w-100"
+                     alt="Venta de pósters"
+                     width="800"
+                     height="500"
+                     loading="lazy"
+                     decoding="async">
 
                 <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
                     <h3>Venta de Pósters</h3>
@@ -91,16 +89,13 @@
         <!-- CARD 2 -->
         <div class="col-md-6">
             <div class="position-relative border rounded-4 overflow-hidden">
-                <picture>
-                    <source srcset="image/foto3.webp" type="image/webp">
-                    <img src="image/foto3.jpg"
-                         class="img-fluid w-100"
-                         alt="Iniciar sesión"
-                         width="800"
-                         height="500"
-                         loading="lazy"
-                         decoding="async">
-                </picture>
+                <img src="image/foto3.webp"
+                     class="img-fluid w-100"
+                     alt="Iniciar sesión"
+                     width="800"
+                     height="500"
+                     loading="lazy"
+                     decoding="async">
 
                 <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
                     <h3>Iniciar sesión</h3>
@@ -131,7 +126,7 @@
             </ul>
         </nav>
 
-        <img src="image/foto-footer.png"
+        <img src="image/foto-footer.webp"
              alt="Logo Squid Game"
              width="60"
              height="60"
