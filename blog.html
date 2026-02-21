@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Squid Game</title>
-
-    <!-- Preload imagen LCP -->
-    <link rel="preload" as="image" href="image/blog3.webp" type="image/webp">
+    <link rel="preload" as="image" href="image/blog3.webp">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="image/logo-squidgame.png" type="image/png">
+    <link rel="icon" href="image/logo-squidgame.webp" type="image/webp">
 </head>
 
 <body>
@@ -19,11 +17,12 @@
     <nav class="navbar navbar-expand-lg mx-auto fw-bold">
         <div class="container mt-2 d-flex align-items-center">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="image/logo-squidgame.png"
+                <img src="image/logo-squidgame.webp"
                      alt="Logo Squid Game"
                      width="120"
                      height="60"
                      decoding="async"
+                     fetchpriority="low"
                      class="logo-index me-2">
             </a>
 
@@ -54,20 +53,16 @@
 <main class="container my-5">
 
     <div class="row">
-
-        <!-- PRIMER POST (LCP) -->
         <div class="col-md-8">
             <div class="blog-post p-4 shadow-lg rounded-2 bg-light">
                 <h2 class="fw-bold">El regreso de Squid Game: El Juego Mortal</h2>
 
-                <picture>
-                    <source srcset="image/blog3.webp" type="image/webp">
-                    <img src="image/blog3.jpg"
-                         alt="Evento Squid Game"
-                         class="img-fluid my-4 rounded"
-                         width="900"
-                         height="600">
-                </picture>
+                <img src="image/blog3.webp"
+                     alt="Evento Squid Game"
+                     class="img-fluid my-4 rounded"
+                     width="900"
+                     height="600"
+                     fetchpriority="high">
 
                 <p class="lead">
                     Tras el éxito rotundo de la primera temporada, Squid Game regresa con una nueva entrega aún más intensa y peligrosa...
@@ -75,7 +70,6 @@
             </div>
         </div>
 
-        <!-- SIDEBAR -->
         <div class="col-md-4 d-flex flex-column gap-4">
 
             <div class="card shadow-lg bg-black">
@@ -92,27 +86,21 @@
                     <h4 class="card-title text-light">Galería</h4>
                     <div class="d-flex justify-content-center gap-2">
 
-                        <picture>
-                            <source srcset="image/blog1.webp" type="image/webp">
-                            <img src="image/blog1.jpg"
-                                 alt="Imagen blog 1"
-                                 class="img-fluid rounded"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
+                        <img src="image/blog1.webp"
+                             alt="Imagen blog 1"
+                             class="img-fluid rounded"
+                             width="400"
+                             height="250"
+                             loading="lazy"
+                             decoding="async">
 
-                        <picture>
-                            <source srcset="image/blog2.webp" type="image/webp">
-                            <img src="image/blog2.jpg"
-                                 alt="Imagen blog 2"
-                                 class="img-fluid rounded"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
+                        <img src="image/blog2.webp"
+                             alt="Imagen blog 2"
+                             class="img-fluid rounded"
+                             width="400"
+                             height="250"
+                             loading="lazy"
+                             decoding="async">
 
                     </div>
                 </div>
@@ -121,23 +109,20 @@
         </div>
     </div>
 
-    <!-- SEGUNDO POST -->
+
     <div class="row mt-5">
 
         <div class="col-md-8">
             <div class="blog-post p-4 shadow-lg rounded bg-light">
                 <h2 class="fw-bold">Preparativos para la temporada 2</h2>
 
-                <picture>
-                    <source srcset="image/blog4.webp" type="image/webp">
-                    <img src="image/blog4.jpg"
-                         alt="Evento temporada 2"
-                         class="img-fluid my-4 rounded"
-                         width="900"
-                         height="600"
-                         loading="lazy"
-                         decoding="async">
-                </picture>
+                <img src="image/blog4.webp"
+                     alt="Evento temporada 2"
+                     class="img-fluid my-4 rounded"
+                     width="900"
+                     height="600"
+                     loading="lazy"
+                     decoding="async">
 
                 <p class="lead">
                     Con la segunda temporada a punto de estrenarse, los rumores apuntan a que esta vez los jugadores estarán más aislados...
@@ -152,27 +137,21 @@
                     <h4 class="card-title text-light">Galería</h4>
                     <div class="d-flex justify-content-center gap-2">
 
-                        <picture>
-                            <source srcset="image/blog5.webp" type="image/webp">
-                            <img src="image/blog5.jpg"
-                                 alt="Imagen blog 5"
-                                 class="img-fluid rounded"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
+                        <img src="image/blog5.webp"
+                             alt="Imagen blog 5"
+                             class="img-fluid rounded"
+                             width="400"
+                             height="250"
+                             loading="lazy"
+                             decoding="async">
 
-                        <picture>
-                            <source srcset="image/blog6.webp" type="image/webp">
-                            <img src="image/blog6.jpg"
-                                 alt="Imagen blog 6"
-                                 class="img-fluid rounded"
-                                 width="400"
-                                 height="250"
-                                 loading="lazy"
-                                 decoding="async">
-                        </picture>
+                        <img src="image/blog6.webp"
+                             alt="Imagen blog 6"
+                             class="img-fluid rounded"
+                             width="400"
+                             height="250"
+                             loading="lazy"
+                             decoding="async">
 
                     </div>
                 </div>
