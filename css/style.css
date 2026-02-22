@@ -11,9 +11,7 @@
 }
 
 .nav-link:hover,
-.album-titulo,
-.card-title,
-.footer-link {
+.footer-link:hover {
     color: #ff3366;
 }
 
@@ -35,4 +33,23 @@
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.card-animate {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.6s ease;
+}
+
+.card-animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .card-animate {
+        transition: none;
+        transform: none;
+    }
 }

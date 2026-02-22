@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio oficial inspirado en Squid Game con pósters y blog temático.">
     <title>Squid Game</title>
-    <link rel="preload" as="image" href="image/foto1.webp">
 
+    <!-- Preload LCP -->
+    <link rel="preload" as="image" href="image/foto1.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="image/logo-squidgame.webp" type="image/webp">
@@ -14,7 +16,7 @@
 <body>
 
 <header class="bg-black border-bottom border-danger" id="index">
-    <nav class="navbar navbar-expand-lg mx-auto fw-bold">
+    <nav class="navbar navbar-expand-lg mx-auto fw-bold" aria-label="Navegación principal">
         <div class="container mt-2 d-flex align-items-center">
 
             <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -32,7 +34,7 @@
                     data-bs-target="#navbarNav"
                     aria-controls="navbarNav"
                     aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -52,25 +54,24 @@
 </header>
 
 
-<div class="container my-5">
+<main class="container my-5">
 
     <!-- HERO -->
-    <div class="position-relative text-center rounded-3 overflow-hidden">
+    <section class="position-relative text-center rounded-3 overflow-hidden">
         <img src="image/foto1.webp"
-            class="img-fluid w-100"
-            alt="Juego Luz Roja, Luz Verde"
-            width="1200"
-            height="600"
-            fetchpriority="high"
-            decoding="async">
-    </div>
-
+             class="img-fluid w-100"
+             alt="Juego Luz Roja, Luz Verde"
+             width="1200"
+             height="600"
+             fetchpriority="high"
+             decoding="async">
+    </section>
 
     <div class="row mt-4">
 
         <!-- CARD 1 -->
         <div class="col-md-6">
-            <div class="position-relative border rounded-4 overflow-hidden">
+            <div class="position-relative border rounded-4 overflow-hidden card-animate">
                 <img src="image/foto2.webp"
                      class="img-fluid w-100"
                      alt="Venta de pósters"
@@ -80,7 +81,7 @@
                      decoding="async">
 
                 <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
-                    <h3>Venta de Pósters</h3>
+                    <h2 class="h3">Venta de Pósters</h2>
                     <p>Elige tu póster.</p>
                     <a href="#" class="btn btn-outline-light">Pósters</a>
                 </div>
@@ -89,7 +90,7 @@
 
         <!-- CARD 2 -->
         <div class="col-md-6">
-            <div class="position-relative border rounded-4 overflow-hidden">
+            <div class="position-relative border rounded-4 overflow-hidden card-animate">
                 <img src="image/foto3.webp"
                      class="img-fluid w-100"
                      alt="Iniciar sesión"
@@ -99,7 +100,7 @@
                      decoding="async">
 
                 <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
-                    <h3>Iniciar sesión</h3>
+                    <h2 class="h3">Iniciar sesión</h2>
                     <p>Inicia sesión para tu póster</p>
                     <a href="#" class="btn btn-outline-light">Iniciar sesión</a>
                 </div>
@@ -107,13 +108,14 @@
         </div>
 
     </div>
-</div>
+
+</main>
 
 
 <footer class="bg-black text-white py-3">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <nav class="mx-auto">
+        <nav class="mx-auto" aria-label="Enlaces del pie de página">
             <ul class="list-inline m-0">
                 <li class="list-inline-item">
                     <a href="#index" class="footer-link fw-bold text-decoration-none px-3">Inicio</a>
@@ -139,6 +141,8 @@
         <small>© 2025 Squid Game. Todos los derechos reservados.</small>
     </div>
 </footer>
+
+<script src="js/script.js" defer></script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
